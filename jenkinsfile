@@ -1,5 +1,6 @@
 node {
    def antHome
+   def props = readProperties  file: 'jenkins-test.conf'
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       git 'https://github.com/maryd323/jenkins-test.git'
