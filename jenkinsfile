@@ -21,6 +21,7 @@ node {
       archiveArtifacts 'build/dist/*.ear'
    }
    stage('Publish'){
+      sh "'echo ${props}'"
       sh "'env'"
    }
 }
