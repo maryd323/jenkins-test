@@ -20,6 +20,6 @@ node {
       archiveArtifacts 'build/dist/*.ear'
    }
    stage('Publish'){
-      sh "'oc cp build/dist/*.ear dx-deployment-0:/tmp/'"
+      sh "'env'"
    }
 }
